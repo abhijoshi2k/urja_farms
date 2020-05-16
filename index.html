@@ -75,13 +75,15 @@
         document.all["layer2"].style.visibility="visible";
         document.all["layer1"].style.opacity="0";
         document.all["layer1"].style.visibility="hidden";
-      },3000);
+      },4000);
     </script>
 
 
 
 </head>
-<body onload="downLoad()" style="background-image: linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)), url(images/bg.gif); background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;">
+<body onload="downLoad()">
+
+
 
 	<div id="layer1" class="layer1_class">
       <table width="100%">
@@ -89,7 +91,7 @@
           <td align="center"><img src="images/load.gif" class="loadimg"></td>
         </tr>
         <tr>
-            <td class="loading">Loading<load class="load1">.</load><load class="load2">.</load><load class="load3">.</load></td>
+            <td class="loading">Loading<span class="load1">.</span><span class="load2">.</span><span class="load3">.</span></td>
         </tr>
       </table>
     </div>
@@ -100,19 +102,28 @@
 
     	<header>
 
-    		<div class="logo">LOGO</div>
-        <nav>
+    		<div class="logo"><a href="#">URJA <span class="farm">FARM</span> EATS</a></div>
+        <nav id="nav">
           <ul>
             <li><a href="#" class="active">HOME</a></li>
             <li><a href="#">ABOUT US</a></li>
             <li><a href="#">OUR PRODUCTS</a></li>
+            <li><a href="#">ORDER NOW</a></li>
             <li><a href="#">CONTACT US</a></li>
           </ul>
         </nav>
-        <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+        <div class="menu-toggle" onclick="myFunction(this)" id="toggle">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
 
     	</header>
-
+      <script type="text/javascript">
+        function myFunction(x) {
+          x.classList.toggle("change");
+        }
+      </script>
       <script type="text/javascript">
         $(document).ready(function(){
           $('.menu-toggle').click(function(){
@@ -120,7 +131,9 @@
           })
         })
       </script>
+      
 
+      
 
 
     </div>

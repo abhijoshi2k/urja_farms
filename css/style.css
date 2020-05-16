@@ -4,27 +4,39 @@ body
 	padding: 0;
 	font-family: sans-serif;
 	background: white;
+	background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url(../images/bg_home.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 header
 {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	padding: 0 100px;
-	background: #262626;
+	background: #f0f8ff;
 	width: 100%;
 	box-sizing: border-box;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+	border-top: 1px solid rgba(0,0,0,0.2);
 }
 
-header .logo
+header .logo a
 {
-	color: #fff;
+	color: green;
 	height: 50px;
 	line-height: 50px;
 	font-size: 24px;
 	float: left;
-	font-weight: bold;
+	text-decoration: none;
+}
+
+header .logo a .farm
+{
+	color: darkgreen;
 }
 
 header nav
@@ -49,16 +61,22 @@ header nav ul li a
 	height: 50px;
 	line-height: 50px;
 	padding: 0 20px;
-	color: #fff;
+	color: brown;
 	text-decoration: none;
 	display: block;
 }
 
-header nav ul li a:hover,
+header nav ul li a:hover
+{
+	color: #fff;
+	background: green;
+	text-decoration: none;
+}
+
 header nav ul li a.active
 {
 	color: #fff;
-	background: #2196f3;
+	background: darkgreen;
 	text-decoration: none;
 }
 
@@ -72,7 +90,7 @@ header nav ul li a.active
 	display: none;
 }
 
-@media (max-width: 899px)
+@media (max-width: 1156px)
 {
 	header
 	{
@@ -80,7 +98,7 @@ header nav ul li a.active
 	}
 }
 
-@media (max-width: 779px)
+@media (max-width: 1000px)
 {
 	header
 	{
@@ -89,20 +107,23 @@ header nav ul li a.active
 	.menu-toggle
 	{
 		display: block;
+		margin-top: 10px;
 	}
 	header nav
 	{
-		position: absolute;
+		position: fixed;
 		width: 100%;
 		height: calc(100vh - 50px);
-		background: #333;
+		background: #fff;
 		top: 50px;
-		left: -100%;
+		right: -100%;
 		transition: 0.5s;
 	}
 	header nav.active
 	{
-		left: 0;
+		right: 0;
+		width: 30%;
+		min-width: 200px;
 	}
 	header nav ul
 	{
@@ -113,4 +134,28 @@ header nav ul li a.active
 	{
 		border-bottom: 1px solid rgba(0,0,0,0.2);
 	}
+}
+
+.bar1, .bar2, .bar3
+{
+	width: 30px;
+	height: 2px;
+	background-color: green;
+	margin: 6px 0;
+	transition: 0.5s ease;
+}
+
+.change .bar1
+{
+	transform: rotate(-45deg) translate(-3px,4px);
+}
+
+.change .bar3
+{
+	transform: rotate(45deg) translate(-7px,-8px);
+}
+
+.change .bar2
+{
+	opacity: 0;
 }
