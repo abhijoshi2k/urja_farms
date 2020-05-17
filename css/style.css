@@ -317,3 +317,16 @@ header nav ul li a.active
 		font-size: 22px;
 	}
 }
+
+@media(max-width: 347px)
+{
+	.banner-btn1
+	{
+		font-size: 21px;
+	}
+
+	.banner-btn2
+	{
+		font-size: 21px;
+	}
+}
