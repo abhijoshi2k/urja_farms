@@ -60,21 +60,55 @@
 
     </style>
     <script>
+      function numcount(){
+        const counters = document.querySelectorAll('.counter');
+        const speed = 100;
+
+        counters.forEach(counter =>{
+          const updateCount = () =>{
+            const target = +counter.getAttribute('data-target');
+            var count = +counter.innerText;
+
+            const inc = Math.floor(target/speed);
+            console.log(inc);
+
+            if(count!=target)
+            {
+              if(count<target)
+              {
+                counter.innerText = count + inc;
+                setTimeout(updateCount, 20);
+              }
+              else
+              {
+                counter.innerText = target;
+              }
+            }
+          }
+
+          updateCount();
+        });
+      }
+
+
       function downLoad(){
         if (document.all){
             document.all["layer2"].style.visibility="visible";
             document.all["layer1"].style.opacity="0";
             document.all["layer1"].style.visibility="hidden";
+            numcount();
         } else if (document.getElementById){
             node = document.getElementById("layer2").style.visibility='visible';
             node = document.getElementById("layer1").style.opacity='0';
             node = document.getElementById("layer1").style.visibility='hidden';
+            numcount();
         }
       }
       setTimeout(function(){
         document.all["layer2"].style.visibility="visible";
         document.all["layer1"].style.opacity="0";
         document.all["layer1"].style.visibility="hidden";
+        numcount();
       },4000);
     </script>
 
@@ -99,10 +133,14 @@
 
 
 
+      
+
+
+
 
     	<header>
 
-    		<div class="logo"><a href="#">URJA <span class="farm">FARM</span> EATS</a></div>
+    		<div class="logo"><a href="#">U<span class="farm-dark">F</span>E</a></div>
         <nav id="nav">
           <ul>
             <li><a href="#" class="active">HOME</a></li>
@@ -131,6 +169,18 @@
           })
         })
       </script>
+      <br>
+      <div class="banner">
+        <br>
+        <h1 class="text-center banner-title">URJA <span class="farm-dark">FARM</span> EATS</h1>
+        <h3 class="text-center banner-text">We sell over <b><span class="counter" data-target="100">0</span></b> different fruits and vegetables!</h3>
+        <div class="text-center banner-btn">
+          <a href="order.html" class="banner-btn1">Order Now!</a>
+          <a href="products.html" class="banner-btn2">Our Products</a>
+        </div>
+      </div>
+
+
       
 
       
