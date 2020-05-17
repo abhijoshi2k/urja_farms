@@ -263,8 +263,8 @@ header nav ul li a.active
 	font-weight: 400;
 	font-size: 27px;
 	text-align: center;
-	color: #420bff;
-	border: solid 2px #420bff;
+	color: #3260ab;
+	border: solid 2px #3260ab;
 	border-radius: 50px;
 	padding: 5px 10px;
 	transition: 0.5s;
@@ -274,7 +274,7 @@ header nav ul li a.active
 .banner-btn2:hover
 {
 	text-decoration: none;
-	background-color: #428bca;
+	background-color: #3260ab;
 	transition: 0.5s;
 	color: white;
 }
