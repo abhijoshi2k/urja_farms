@@ -21,182 +21,211 @@
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 
 	<style media="screen" type="text/css">
-      
-      .loading
-      {
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        position: fixed;
-        display: block;
-        opacity: 1;
-        background-color: #fff;
-        z-index: 999;
-        text-align: center;
-      }
 
-      .loadbox
-      {
-        position: absolute;
-        height: 160px;
-        width: 700px;
-        top: 50%;
-        left: 50%;
-        text-align: center;
-        margin-top: -100px;
-        margin-left: -350px;
-      }
+		.loading
+		{
 
-      .green
-      {
-        color: green;
-        font-size: 80px;
-      }
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			position: fixed;
+			display: block;
+			opacity: 1;
+			background-color: #fff;
+			z-index: 999;
+			text-align: center;
+			transition: 1s;
+		}
 
-      .darkgreen
-      {
-        color: darkgreen;
-      }
-      
-      .load1 {visibility: hidden; animation-name: one; animation-iteration-count: infinite; animation-duration: 1.2s; animation-timing-function: step-end;}
-      .load2 {visibility: hidden; animation-name: two; animation-iteration-count: infinite; animation-duration: 1.2s; animation-timing-function: step-end;}
-      .load3 {visibility: hidden; animation-name: three; animation-iteration-count: infinite; animation-duration: 1.2s; animation-timing-function: step-end;}
-      @keyframes one {
-        0%{visibility: hidden;}
-        25%{visibility: visible;}
-        100%{visibility: hidden;}
-      }
-      @keyframes two {
-        0%{visibility: hidden;}
-        50%{visibility: visible;}
-        100%{visibility: hidden;}
-      }
-      @keyframes three {
-        0%{visibility: hidden;}
-        75%{visibility: visible;}
-        100%{visibility: hidden;}
-      }
-      
+		.loadbox
+		{
+			padding-top: 138px;
+			text-align: center;
+		}
 
+		@media(max-width: 706px)
+		{
+			.loadbox
+			{
+				padding: 98px 200px 0px 200px;
+			}
+		}
 
-    </style>
-    <script>
-      function numcount(){
-        const counters = document.querySelectorAll('.counter');
-        const speed = 100;
+		@media(max-width: 692px)
+		{
+			.loadbox
+			{
+				padding: 98px 140px 0px 140px;
+			}
+		}
 
-        counters.forEach(counter =>{
-          const updateCount = () =>{
-            const target = +counter.getAttribute('data-target');
-            var count = +counter.innerText;
+		@media(max-width: 492px)
+		{
+			.loadbox
+			{
+				padding: 98px 40px 0px 40px;
+			}
+		}
 
-            const inc = Math.floor(target/speed);
-            console.log(inc);
+		.green
+		{
+			color: green;
+			font-size: 80px;
+			padding-bottom: 40px;
+		}
 
-            
-            if(count<target)
-            {
-              counter.innerText = count + inc;
-              setTimeout(updateCount, 20);
-            }
-            else
-            {
-              counter.innerText = target;
-            }
-            
-          }
+		.darkgreen
+		{
+			color: darkgreen;
+		}
 
-          updateCount();
-        });
-      }
+		.load1 {visibility: hidden; animation-name: one; animation-iteration-count: infinite; animation-duration: 2s; animation-timing-function: step-end;}
+		.load2 {visibility: hidden; animation-name: two; animation-iteration-count: infinite; animation-duration: 2s; animation-timing-function: step-end;}
+		.load3 {visibility: hidden; animation-name: three; animation-iteration-count: infinite; animation-duration: 2s; animation-timing-function: step-end;}
+		@keyframes one {
+			0%{visibility: hidden;}
+			25%{visibility: visible;}
+			100%{visibility: hidden;}
+		}
+		@keyframes two {
+			0%{visibility: hidden;}
+			50%{visibility: visible;}
+			100%{visibility: hidden;}
+		}
+		@keyframes three {
+			0%{visibility: hidden;}
+			75%{visibility: visible;}
+			100%{visibility: hidden;}
+		}
 
 
-     
-    </script>
+
+	</style>
+	<script>
+		function numcount(){
+			const counters = document.querySelectorAll('.counter');
+			const speed = 100;
+
+			counters.forEach(counter =>{
+				const updateCount = () =>{
+					const target = +counter.getAttribute('data-target');
+					var count = +counter.innerText;
+
+					const inc = Math.floor(target/speed);
+					console.log(inc);
+
+
+					if(count<target)
+					{
+						counter.innerText = count + inc;
+						setTimeout(updateCount, 20);
+					}
+					else
+					{
+						counter.innerText = target;
+					}
+
+				}
+
+				updateCount();
+			});
+		}
+
+
+
+	</script>
 
 
 
 </head>
 <body>
 
-    <div class="loading">
-      <div class="loadbox">
-        <h1 class="green">URJA <span class="darkgreen">FARM</span> EATS</h1>
-        <h2 class="loadtext">Loading <span class="load1">.</span> <span class="load2">.</span> <span class="load3">.</span></h2>
-      </div>
-    </div>
+	<div class="loading">
+		<div class="loadbox">
+			<h1 class="green">URJA <span class="darkgreen">FARM</span> EATS</h1>
+			<h2 class="loadtext">Loading <span class="load1">.</span> <span class="load2">.</span> <span class="load3">.</span></h2>
+		</div>
+	</div>
 
 
 
 
-      
 
 
 
 
-    	<header>
 
-    		<div class="logo"><a href="#">U<span class="farm-dark">F</span>E</a></div>
-        <nav id="nav">
-          <ul>
-            <li><a href="#" class="active">HOME</a></li>
-            <li><a href="#">ABOUT US</a></li>
-            <li><a href="#">OUR PRODUCTS</a></li>
-            <li><a href="#">ORDER NOW</a></li>
-            <li><a href="#">CONTACT US</a></li>
-          </ul>
-        </nav>
-        <div class="menu-toggle" onclick="myFunction(this)" id="toggle">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-        </div>
+	<header>
 
-    	</header>
-      <script type="text/javascript">
-        function myFunction(x) {
-          x.classList.toggle("change");
-        }
-      </script>
-      <script type="text/javascript">
-        $(document).ready(function(){
-          $('.menu-toggle').click(function(){
-            $('nav').toggleClass('active')
-          })
-        })
-      </script>
-      <br>
-      <div class="banner">
-        <br>
-        <h1 class="text-center banner-title">URJA <span class="farm-dark">FARM</span> EATS</h1>
-        <h3 class="text-center banner-text">We sell over <b><span class="counter" data-target="100">0</span></b> different fruits and vegetables!</h3>
-        <div class="text-center banner-btn">
-          <a href="order.html" class="banner-btn1">Order Online</a>
-          <a href="products.html" class="banner-btn2">Our Products</a>
-        </div>
-      </div>
+		<div class="logo"><a href="#">U<span class="farm-dark">F</span>E</a></div>
+		<nav id="nav">
+			<ul>
+				<li><a href="#" class="active">HOME</a></li>
+				<li><a href="#">ABOUT US</a></li>
+				<li><a href="#">OUR PRODUCTS</a></li>
+				<li><a href="#">ORDER NOW</a></li>
+				<li><a href="#">CONTACT US</a></li>
+			</ul>
+		</nav>
+		<div class="menu-toggle" onclick="myFunction(this)" id="toggle">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
+		</div>
+
+	</header>
+	<script type="text/javascript">
+		function myFunction(x) {
+			x.classList.toggle("change");
+		}
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.menu-toggle').click(function(){
+				$('nav').toggleClass('active')
+			})
+		})
+	</script>
+	<br>
+	<div class="banner">
+		<br>
+		<h1 class="text-center banner-title">URJA <span class="farm-dark">FARM</span> EATS</h1>
+		<h4 class="text-center banner-text">We sell over <b><span class="counter" data-target="100">0</span></b> different fruits and vegetables!</h4>
+		<div class="text-center banner-btn">
+			<a href="order.html" class="banner-btn1">Order Online</a>
+			<a href="products.html" class="banner-btn2">Our Products</a>
+		</div>
+	</div>
 
 
-      
 
-      
-<script type="text/javascript">
-  document.onreadystatechange = function(){
-    if(document.readyState !=="complete")
-    {
-      console.log("no");
-    }
-    else
-    {
-      console.log("yes");
-    }
-  };
-</script>
+
+
+	<script type="text/javascript">
+		document.onreadystatechange = function(){
+			if(document.readyState !=="complete")
+			{
+				document.querySelector(".loading").style.opacity="1";
+			}
+			else
+			{
+				document.querySelector(".loading").style.opacity="0";
+				document.querySelector(".loading").style.visibility="hidden";
+				numcount();
+			}
+		};
+
+		setTimeout(function(){
+			document.querySelector(".loading").style.opacity="0";
+			document.querySelector(".loading").style.visibility="hidden";
+			numcount();
+		},3000);
+	</script>
 
 
 </body>
