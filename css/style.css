@@ -37,7 +37,7 @@ header
 
 header .logo a
 {
-	color: #11e002;
+	color: #1ec712;
 	height: 50px;
 	line-height: 50px;
 	font-size: 35px;
@@ -48,7 +48,7 @@ header .logo a
 
 .farm-dark
 {
-	color: #1ec712;
+	color: #2ea802;
 }
 
 header nav
@@ -83,7 +83,7 @@ header nav ul li a
 header nav ul li a:hover
 {
 	color: #fff;
-	background: #11e002;
+	background: #1ec712;
 	text-decoration: none;
 	transition: 0.2s;
 }
@@ -91,7 +91,7 @@ header nav ul li a:hover
 header nav ul li a.active
 {
 	color: #fff;
-	background: #1ec712;
+	background: #2ea802;
 	text-decoration: none;
 }
 
@@ -139,7 +139,7 @@ header nav ul li a.active
 		right: 0;
 		width: 30%;
 		min-width: 200px;
-		border-left: solid 1px;
+		border-left: 1px solid rgba(0,0,0,0.2);
 	}
 	header nav ul
 	{
@@ -156,7 +156,7 @@ header nav ul li a.active
 {
 	width: 30px;
 	height: 2px;
-	background-color: #1ec712;
+	background-color: #009000;
 	margin: 6px 0;
 	transition: 0.5s ease;
 }
@@ -186,7 +186,7 @@ header nav ul li a.active
 .banner-title
 {
 	padding: 90px 40px 20px 40px;
-	color: #11e002;
+	color: #1ec712;
 	font-size: 100px;
 	text-shadow: 0 0 0px #0d9903;
 	font-family: 'title';
