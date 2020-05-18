@@ -24,70 +24,7 @@
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 
-	<style media="screen" type="text/css">
-
-		.loading
-		{
-
-			width: 100%;
-			height: 100%;
-			top: 0;
-			left: 0;
-			position: fixed;
-			display: block;
-			opacity: 1;
-			background-color: #fff;
-			z-index: 999;
-			text-align: center;
-			transition: 1s;
-		}
-
-		.loadbox
-		{
-			padding-top: 138px;
-			text-align: center;
-		}
-
-		@media(max-width: 706px)
-		{
-			.loadbox
-			{
-				padding: 98px 200px 0px 200px;
-			}
-		}
-
-		@media(max-width: 692px)
-		{
-			.loadbox
-			{
-				padding: 98px 140px 0px 140px;
-			}
-		}
-
-		@media(max-width: 492px)
-		{
-			.loadbox
-			{
-				padding: 98px 40px 0px 40px;
-			}
-		}
-
-		.green
-		{
-			color: green;
-			font-size: 80px;
-			padding-bottom: 40px;
-		}
-
-		.darkgreen
-		{
-			color: darkgreen;
-		}
-
-		
-
-
-	</style>
+	
 	<script>
 		function numcount(){
 			const counters = document.querySelectorAll('.counter');
@@ -126,15 +63,6 @@
 
 </head>
 <body>
-
-	<div class="loading">
-		<div class="loadbox">
-			<h1 class="green">URJA <span class="darkgreen">FARM</span> EATS</h1>
-			<h3 class="loadtext">Loading . . .</h3>
-		</div>
-	</div>
-
-
 
 
 
@@ -190,23 +118,15 @@
 
 	<script type="text/javascript">
 		document.onreadystatechange = function(){
-			if(document.readyState !=="complete")
+			if(document.readyState =="complete")
 			{
-				document.querySelector(".loading").style.opacity="1";
-			}
-			else
-			{
-				document.querySelector(".loading").style.opacity="0";
-				document.querySelector(".loading").style.visibility="hidden";
 				numcount();
 			}
 		};
 
 		setTimeout(function(){
-			document.querySelector(".loading").style.opacity="0";
-			document.querySelector(".loading").style.visibility="hidden";
 			numcount();
-		},3000);
+		},2500);
 	</script>
 
 
