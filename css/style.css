@@ -18,6 +18,11 @@ body
   background: black;
 }
 
+@font-face {
+  font-family: title;
+  src: url(../fonts/nickainley.otf);
+}
+
 header
 {
 	position: fixed;
@@ -33,7 +38,7 @@ header
 
 header .logo a
 {
-	color: green;
+	color: #11e002;
 	height: 50px;
 	line-height: 50px;
 	font-size: 24px;
@@ -43,7 +48,7 @@ header .logo a
 
 .farm-dark
 {
-	color: darkgreen;
+	color: #1ec712;
 }
 
 header nav
@@ -77,7 +82,7 @@ header nav ul li a
 header nav ul li a:hover
 {
 	color: #fff;
-	background: green;
+	background: #11e002;
 	text-decoration: none;
 	transition: 0.5s;
 }
@@ -85,7 +90,7 @@ header nav ul li a:hover
 header nav ul li a.active
 {
 	color: #fff;
-	background: darkgreen;
+	background: #1ec712;
 	text-decoration: none;
 }
 
@@ -150,7 +155,7 @@ header nav ul li a.active
 {
 	width: 30px;
 	height: 2px;
-	background-color: green;
+	background-color: #11e002;
 	margin: 6px 0;
 	transition: 0.5s ease;
 }
@@ -172,23 +177,25 @@ header nav ul li a.active
 
 .banner
 {
-	background: linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)), url(../images/banner.jpg);
+	background: linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8)), url(../images/banner.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
 .banner-title
 {
-	padding: 90px 40px 40px 40px;
-	color: green;
+	padding: 90px 40px 20px 40px;
+	color: #11e002;
 	font-size: 80px;
+	text-shadow: 0 0 1px brown;
+	font-family: title;
 }
 
 @media(max-width: 706px)
 {
 	.banner-title
 	{
-		padding: 50px 200px 40px 200px;
+		padding: 50px 200px 20px 200px;
 	}
 }
 
@@ -196,7 +203,7 @@ header nav ul li a.active
 {
 	.banner-title
 	{
-		padding: 50px 140px 40px 140px;
+		padding: 50px 140px 20px 140px;
 	}
 }
 
@@ -204,14 +211,19 @@ header nav ul li a.active
 {
 	.banner-title
 	{
-		padding: 50px 40px 40px 40px;
+		padding: 50px 40px 20px 40px;
 	}
+}
+
+.banner-tagline
+{
+	padding-bottom: 20px;
 }
 
 .banner-text
 {
 	color: brown;
-	padding-bottom: 20px;
+	padding-bottom: 40px;
 	padding-left: 20px;
 	padding-right: 20px;
 }
@@ -239,7 +251,7 @@ header nav ul li a.active
 
 .banner-btn
 {
-	padding-bottom: 20px;
+	padding-bottom: 40px;
 }
 
 .banner-btn1:hover
