@@ -76,7 +76,8 @@ header nav ul li a
 	color: brown;
 	text-decoration: none;
 	display: block;
-	transition: 0.5s;
+	transition: 0.2s;
+	font-family: 'Montserrat', sans-serif;
 }
 
 header nav ul li a:hover
@@ -84,7 +85,7 @@ header nav ul li a:hover
 	color: #fff;
 	background: #11e002;
 	text-decoration: none;
-	transition: 0.5s;
+	transition: 0.2s;
 }
 
 header nav ul li a.active
@@ -186,9 +187,9 @@ header nav ul li a.active
 {
 	padding: 90px 40px 20px 40px;
 	color: #11e002;
-	font-size: 80px;
-	text-shadow: 0 0 1px brown;
-	font-family: title;
+	font-size: 100px;
+	text-shadow: 0 0 0px #0d9903;
+	font-family: 'title';
 }
 
 @media(max-width: 706px)
@@ -218,6 +219,8 @@ header nav ul li a.active
 .banner-tagline
 {
 	padding-bottom: 20px;
+	font-family: 'Raleway', sans-serif;
+	color: darkgreen;
 }
 
 .banner-text
@@ -226,6 +229,7 @@ header nav ul li a.active
 	padding-bottom: 40px;
 	padding-left: 20px;
 	padding-right: 20px;
+	font-family: 'Montserrat', sans-serif;
 }
 
 @media(max-width: 320px)
@@ -247,6 +251,7 @@ header nav ul li a.active
 	padding: 5px 10px;
 	transition: 0.5s;
 	margin-right: 20px;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .banner-btn
@@ -273,6 +278,7 @@ header nav ul li a.active
 	padding: 5px 10px;
 	transition: 0.5s;
 	margin-left: 20px;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .banner-btn2:hover
