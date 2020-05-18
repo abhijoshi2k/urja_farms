@@ -35,39 +35,7 @@
     <link rel="apple-touch-icon" href="images/logo.jpg">
 
 	
-	<script>
-		function numcount(){
-			const counters = document.querySelectorAll('.counter');
-			const speed = 99;
 
-			counters.forEach(counter =>{
-				const updateCount = () =>{
-					const target = +counter.getAttribute('data-target');
-					var count = +counter.innerText;
-
-					const inc = Math.floor(target/speed);
-					console.log(inc);
-
-
-					if(count<target)
-					{
-						counter.innerText = count + inc;
-						setTimeout(updateCount, 20);
-					}
-					else
-					{
-						counter.innerText = target;
-					}
-
-				}
-
-				updateCount();
-			});
-		}
-
-
-
-	</script>
 
 
 
@@ -82,14 +50,14 @@
 
 	<header>
 
-		<div class="logo"><a href="javascript: void(0)">U<span class="farm-dark">F</span>E</a></div>
+		<div class="logo"><a href="index.html">U<span class="farm-dark">F</span>E</a></div>
 		<nav id="nav">
 			<ul>
-				<li><a href="javascript: void(0)" class="active"><b>HOME</b></a></li>
+				<li><a href="index.html"><b>HOME</b></a></li>
 				<li><a href="about.html"><b>ABOUT US</b></a></li>
 				<li><a href="products.html"><b>OUR PRODUCTS</b></a></li>
 				<li><a href="order.html"><b>ORDER NOW</b></a></li>
-				<li><a href="contact.html"><b>CONTACT US</b></a></li>
+				<li><a href="javascript: void(0)" class="active"><b>CONTACT US</b></a></li>
 			</ul>
 		</nav>
 		<div class="menu-toggle" onclick="myFunction(this)" id="toggle">
@@ -112,33 +80,7 @@
 		})
 	</script>
 	<br>
-	<div class="banner">
-		<br>
-		<h1 class="text-center banner-title">Urja <span class="farm-dark">Farm</span> Eats</h1>
-		<h3 class="banner-tagline text-center">FEEL THE FRESHNESS</h3>
-		<h4 class="text-center banner-text">We sell over <b><span class="counter" data-target="99">0</span></b> different fruits and vegetables!</h4>
-		<div class="text-center banner-btn">
-			<a href="order.html" class="banner-btn1">Order Online</a>
-			<a href="products.html" class="banner-btn2">Our Products</a>
-		</div>
-	</div>
 
-
-
-
-
-	<script type="text/javascript">
-		document.onreadystatechange = function(){
-			if(document.readyState =="complete")
-			{
-				numcount();
-			}
-		};
-
-		setTimeout(function(){
-			numcount();
-		},2500);
-	</script>
 
 
 </body>

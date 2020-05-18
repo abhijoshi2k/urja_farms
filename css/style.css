@@ -78,6 +78,7 @@ header nav ul li a
 	display: block;
 	transition: 0.2s;
 	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
 }
 
 header nav ul li a:hover
@@ -140,6 +141,7 @@ header nav ul li a.active
 		width: 30%;
 		min-width: 200px;
 		border-left: 1px solid rgba(0,0,0,0.2);
+		border-top: 1px solid rgba(0,0,0,0.2);
 	}
 	header nav ul
 	{
