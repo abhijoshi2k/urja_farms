@@ -33,7 +33,6 @@ header
 	width: 100%;
 	box-sizing: border-box;
 	border-bottom: 1px solid rgba(0,0,0,0.2);
-	border-top: 1px solid rgba(0,0,0,0.2);
 }
 
 header .logo a
@@ -41,9 +40,10 @@ header .logo a
 	color: #11e002;
 	height: 50px;
 	line-height: 50px;
-	font-size: 24px;
+	font-size: 35px;
 	float: left;
 	text-decoration: none;
+	font-family: 'title';
 }
 
 .farm-dark
@@ -178,7 +178,7 @@ header nav ul li a.active
 
 .banner
 {
-	background: linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8)), url(../images/banner.jpg);
+	background: linear-gradient(rgba(255,255,255,0.85),rgba(255,255,255,0.85)), url(../images/banner.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -196,19 +196,19 @@ header nav ul li a.active
 {
 	.banner-title
 	{
-		padding: 50px 200px 20px 200px;
+		padding: 50px 40px 20px 40px;
 	}
 }
 
-@media(max-width: 692px)
+@media(max-width: 485px)
 {
 	.banner-title
 	{
-		padding: 50px 140px 20px 140px;
+		padding: 50px 70px 20px 70px;
 	}
 }
 
-@media(max-width: 492px)
+@media(max-width: 369px)
 {
 	.banner-title
 	{
@@ -238,6 +238,11 @@ header nav ul li a.active
 	{
 		font-size: 23px;
 	}
+}
+
+.banner-btn
+{
+	padding-bottom: 40px;
 }
 
 .banner-btn1
@@ -302,29 +307,31 @@ header nav ul li a.active
 	}
 }
 
-@media(max-width: 434px)
+@media(max-width: 470px)
 {
 	.banner-btn1
 	{
 		margin-right: 5px;
+		font-size: 22px;
 	}
 
 	.banner-btn2
 	{
 		margin-left: 5px;
+		font-size: 22px;
 	}
 }
 
-@media(max-width: 397px)
+@media(max-width: 379px)
 {
 	.banner-btn1
 	{
-		font-size: 22px;
+		margin: 0 0 0 0;
 	}
 
 	.banner-btn2
 	{
-		font-size: 22px;
+		margin: 0 0 0 0;
 	}
 }
 
@@ -332,11 +339,11 @@ header nav ul li a.active
 {
 	.banner-btn1
 	{
-		font-size: 21px;
+		font-size: 19px;
 	}
 
 	.banner-btn2
 	{
-		font-size: 21px;
+		font-size: 19px;
 	}
 }
