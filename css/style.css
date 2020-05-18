@@ -79,6 +79,7 @@ header nav ul li a
 	transition: 0.2s;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 18px;
+	font-weight: 600;
 }
 
 header nav ul li a:hover
@@ -86,6 +87,7 @@ header nav ul li a:hover
 	color: #fff;
 	background: #19b30e;
 	text-decoration: none;
+	font-weight: 500;
 	transition: 0.2s;
 }
 
@@ -94,6 +96,7 @@ header nav ul li a.active
 	color: #fff;
 	background: #278f01;
 	text-decoration: none;
+	font-weight: 500;
 }
 
 .menu-toggle
@@ -151,6 +154,7 @@ header nav ul li a.active
 	header nav ul li a
 	{
 		border-bottom: 1px solid rgba(0,0,0,0.2);
+		font-weight: 500;
 	}
 }
 
