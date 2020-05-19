@@ -27,7 +27,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
-	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/48f5df0e7d.js" crossorigin="anonymous"></script>
 
 
 	<link rel="shortcut icon" href="images/logo.jpg">
@@ -46,7 +46,6 @@
 					var count = +counter.innerText;
 
 					const inc = Math.floor(target/speed);
-					console.log(inc);
 
 
 					if(count<target)
@@ -115,7 +114,7 @@
 	<div class="banner">
 		<br>
 		<h1 class="text-center banner-title">Urja <span class="farm-dark">Farm</span> Eats</h1>
-		<h3 class="banner-tagline text-center">FEEL THE FRESHNESS</h3>
+		<h3 class="banner-tagline text-center"><i>...Feel the Freshness</i></h3>
 		<h4 class="text-center banner-text">We sell over <b><span class="counter" data-target="99">0</span></b> different fruits and vegetables!</h4>
 		<div class="text-center banner-btn">
 			<a href="order.html" class="banner-btn1">Order Online</a>
@@ -139,6 +138,70 @@
 			numcount();
 		},2500);
 	</script>
+
+
+
+<!--footer-->
+
+
+<div>
+	<img src="images/grass.jpg" class="grass">
+</div>
+
+<footer>
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+					<h3>
+						Reach Out to Us
+					</h3>
+					<div class="row">
+						<div class="col-2 text-center"><i class="far fa-address-card"></i></div>
+						<div class="col-10">Vaibhav Kopardekar</div>
+					</div>
+					<div class="row">
+						<div class="col-2 text-center"><i class="fas fa-store"></i></div>
+						<div class="col-10">4/6, Malwani Municipal Colony, Near Malwani Police Station, Malad West, Mumbai-400075</div>
+					</div>
+					<div class="row">
+						<div class="col-2 text-center"><i class="fas fa-mobile-alt"></i></div>
+						<div class="col-10">9137600428</div>
+					</div>
+					<div class="row">
+						<div class="col-2 text-center"><i class="far fa-envelope"></i></div>
+						<div class="col-10">urjafarmeats@gmail.com</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+					<h3>
+						Social Media Handles
+					</h3>
+					<p>
+						We are always approachable to you on your most loved social media handles. You can also place your orders by sending direct messages here.
+						<br>
+						<a href="#" class="button btn insta"><i class="fab fa-instagram"></i> instagram</a>
+						<a href="#" class="button btn fb"><i class="fab fa-facebook-f"></i> facebook</a>
+					</p>
+				</div>
+				<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+					<h3>
+						Newsletter
+					</h3>
+					<p>
+						By subscribing to our mailing list you will always get latest offers and updates from us.
+						<br>
+						<form class="text-center footer-form">
+							<input type="email" name="" class="footer-input" placeholder="Type your email" required><button type="submit" class="btn footer-button"><i class="far fa-paper-plane"></i></button>
+						</form>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>	
+</footer>
+
+
 
 
 </body>
