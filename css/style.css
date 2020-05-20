@@ -392,8 +392,7 @@ header nav ul li a.active
 
 footer
 {
-	background: url(../images/dirt.jpg);
-	color: #fff;
+	background: linear-gradient(rgba(33,25,20,0),rgba(33,25,20,1)),url(../images/dirt.jpg);
 }
 
 .insta
@@ -443,4 +442,29 @@ footer
 {
 	width: 100%;
 	border: solid 1px #fff;
+}
+
+.footer-blocks
+{
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+
+.footer-head
+{
+	padding-top: 5px;
+	padding-bottom: 10px;
+	color: #fff;
+}
+
+.footer-contact
+{
+	padding-left: 0px !important;
+}
+
+.footer-left
+{
+	padding-top: 5px;
+	padding-bottom: 10px;
+	color: rgba(255,255,255,0.75);
 }
