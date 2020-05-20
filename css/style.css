@@ -542,3 +542,9 @@ footer
 	font-size: 12px;
 	color: rgba(255,255,255,0.65);
 }
+
+.delivery-flow
+{
+	font-size: 10vw;
+	color: #016a8c;
+}
