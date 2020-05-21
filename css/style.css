@@ -47,6 +47,16 @@ header .logo a
 	font-family: 'title';
 }
 
+header .logo img
+{
+	height: 44px;
+	width: 44px;
+	float: left;
+	margin-right: 5px;
+	margin-top: 3px;
+	border-radius: 50%
+}
+
 .farm-dark
 {
 	color: #278f01;
@@ -294,6 +304,14 @@ header nav ul li a.active
 .banner-btn
 {
 	padding-bottom: 40px;
+}
+
+@media(max-width: 350px)
+{
+	.banner-btn
+	{
+		padding-bottom: 20px;
+	}
 }
 
 .banner-btn1:hover
@@ -547,4 +565,76 @@ footer
 {
 	font-size: 10vw;
 	color: #016a8c;
+}
+
+.topic
+{
+	font-family: 'Raleway', sans-serif;
+	font-size: 40px;
+	margin: 10px 0 10px 0;
+	color: #000;
+}
+
+@media(max-width: 520px)
+{
+	.topic
+	{
+		font-size: 30px;
+	}
+}
+
+@media(max-width: 350px)
+{
+	.topic
+	{
+		font-size: 20px;
+	}
+}
+
+.why-us
+{
+	color: rgba(0,0,0,0.75);
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	text-align: justify;
+}
+
+.covid
+{
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+}
+
+@media(max-width: 350px)
+{
+	.why-us, .covid
+	{
+		font-size: 20px;
+	}
+}
+
+.covid-rule
+{
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	padding-bottom: 5px;
+}
+
+@media(max-width: 350px)
+{
+	.covid-rule
+	{
+		font-size: 20px;
+	}
+}
+
+.covid-icon
+{
+	padding-right: 0px !important;
+	text-align: right;
+}
+
+.covid-padding
+{
+	padding-bottom: 10px;
 }
