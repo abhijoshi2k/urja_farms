@@ -89,7 +89,7 @@
 
 	<header>
 
-		<div class="logo"><a href="javascript: void(0)"><img src="images/logo.jpg">U<span class="farm-dark">F</span>E</a></div>
+		<div class="logo"><a href="javascript: void(0)" id="logo"><img src="images/logo.jpg">U<span class="farm-dark">F</span>E</a></div>
 		<nav id="nav">
 			<ul>
 				<li><a href="javascript: void(0)" class="active">HOME</a></li>
@@ -145,6 +145,18 @@
 		setTimeout(function(){
 			numcount();
 		},2500);
+
+		window.onscroll = function() {
+			if(document.body.scrollTop > 250 || document.documentElement.scrollTop > 250)
+			{
+				document.getElementById('logo').innerHTML = '<img src="images/logo.jpg">Urja<span class="farm-dark">Farm</span>Eats';
+			}
+			else
+			{
+				document.getElementById('logo').innerHTML = '<img src="images/logo.jpg">U<span class="farm-dark">F</span>E';
+			}
+		}
+
 	</script>
 
 
