@@ -380,6 +380,7 @@ header nav ul li a.active
 	{
 		padding-top: 15px;
 		padding-bottom: 15px;
+		line-height: 1;
 	}
 	.banner-tagline
 	{
