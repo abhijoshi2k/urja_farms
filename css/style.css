@@ -374,7 +374,7 @@ header nav ul li a.active
 	}
 }
 
-@media(max-height: 568px)
+@media(max-height: 600px)
 {
 	.banner-title
 	{
