@@ -609,7 +609,7 @@ footer
 {
 	.why-us, .covid
 	{
-		font-size: 20px;
+		font-size: 15px;
 	}
 }
 
@@ -624,7 +624,7 @@ footer
 {
 	.covid-rule
 	{
-		font-size: 20px;
+		font-size: 15px;
 	}
 }
 
@@ -637,4 +637,32 @@ footer
 .covid-padding
 {
 	padding-bottom: 10px;
+}
+
+.car
+{
+	padding-top: 25px;
+}
+
+@media(min-width: 1000px)
+{
+	.carimg
+	{
+		height: 75vh;
+		max-height: all;
+	}
+}
+
+.shadow-text
+{
+	text-shadow: 1px 1px 1px #000,-1px -1px 1px #000;
+	background: rgba(0,0,0,0.5);
+	width: auto;
+	font-family: sans-serif;
+}
+
+.feel
+{
+	font-family: 'Raleway', sans-serif;
+    color: #007400;
 }

@@ -43,38 +43,7 @@
     <link rel="apple-touch-icon" href="images/logo.jpg">
 
 	
-	<script>
-		function numcount(){
-			const counters = document.querySelectorAll('.counter');
-			const speed = 99;
-
-			counters.forEach(counter =>{
-				const updateCount = () =>{
-					const target = +counter.getAttribute('data-target');
-					var count = +counter.innerText;
-
-					const inc = Math.floor(target/speed);
-
-
-					if(count<target)
-					{
-						counter.innerText = count + inc;
-						setTimeout(updateCount, 20);
-					}
-					else
-					{
-						counter.innerText = target;
-					}
-
-				}
-
-				updateCount();
-			});
-		}
-
-
-
-	</script>
+	
 
 
 
@@ -121,7 +90,7 @@
 	<br>
 
 
-<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+<div id="carouselExampleCaptions" class="carousel slide car" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -129,24 +98,24 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="..." class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      <img src="images/car3.png" class="d-block w-100 carimg" alt="...">
+      <div class="carousel-caption d-md-block">
+        <h5 class="shadow-text">Helping Indian farmers</h5>
+        <p class="shadow-text">We purchase all vegetables from our farmers at reasonable price.</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <img src="images/car2.png" class="d-block w-100 carimg" alt="...">
+      <div class="carousel-caption d-md-block">
+        <h5 class="shadow-text">Providing fresh grocery</h5>
+        <p class="shadow-text">We always provide best in class quality.</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      <img src="images/car1.png" class="d-block w-100 carimg" alt="...">
+      <div class="carousel-caption d-md-block">
+        <h5 class="shadow-text">Lower Rates.</h5>
+        <p class="shadow-text">We try to provide you grocery at lowest possible rates.</p>
       </div>
     </div>
   </div>
@@ -158,6 +127,61 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
+</div>
+
+
+<div class="container">
+	<h2 class="text-center topic">Know About Us</h2>
+	<p class="why-us">We provide <b>unadultrated</b> and <b>fresh</b> Fruits and Vegetables at your door-step. Choose from a wide range of best quality fruits and vegetables available at the lowest prices. Just stay at home and place your order! We will deliver it right to your door-step. Our home delivery service is available from Borivali to Goregaon. <span class="text-danger">We accept bulk orders also</span>. Order the fresh green groceries directly from the farm and <span class="feel">FEEL THE FRESHNESS</span>. We guarantee <b>on-time delivery</b>, and the <b>best quality</b>!
+	</p>
+	<p class="covid text-center text-success">
+		Advantages of ordering form us -
+		<div class="covid-padding">
+			<div class="row">
+				<div class="col-lg-6 col-sm-12 covid-rule">
+					<div class="row text-success">
+						<div class="col-1 covid-icon"><i class="fas fa-carrot"></i></div>
+						<div class="col-11">Safe and best quality groceries only.</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-sm-12 covid-rule">
+					<div class="row text-success">
+						<div class="col-1 covid-icon"><i class="fas fa-tags"></i></div>
+						<div class="col-11">Discount for bulk orders.</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-6 col-sm-12 covid-rule">
+					<div class="row text-success">
+						<div class="col-1 covid-icon"><i class="fab fa-creative-commons-nc"></i></div>
+						<div class="col-11"><b>No Extra charge</b> for cancellation.</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-sm-12 covid-rule">
+					<div class="row text-success">
+						<div class="col-1 covid-icon"><i class="fas fa-truck"></i></div>
+						<div class="col-11">Delivery within 2 days.</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-6 col-sm-12 covid-rule">
+					<div class="row text-success">
+						<div class="col-1 covid-icon"><i class="fas fa-money-bill-wave"></i></div>
+						<div class="col-11"><b>Free</b> home delivery above ₹200.</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-sm-12 covid-rule">
+					<div class="row text-success">
+						<div class="col-1 covid-icon"><i class="fas fa-rupee-sign"></i></div>
+						<div class="col-11">Payment on Delivery.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</p>
 </div>
 
 
