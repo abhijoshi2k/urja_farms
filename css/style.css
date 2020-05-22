@@ -89,7 +89,7 @@ header nav ul li a
 	display: block;
 	transition: 0.2s;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 18px;
+	font-size: 15px;
 	font-weight: 600;
 }
 
@@ -665,4 +665,27 @@ footer
 {
 	font-family: 'Raleway', sans-serif;
     color: #007400;
+}
+
+.call-button
+{
+	padding-bottom: 15px;
+}
+
+.counter
+{
+	font-size: 30px;
+}
+
+@media(max-width: 336px)
+{
+	.counter
+	{
+		font-size: 27px;
+	}
+}
+
+.success-color
+{
+	color: #007400;
 }
