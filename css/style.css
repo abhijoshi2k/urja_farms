@@ -297,7 +297,7 @@ header nav ul li a.active
 .banner-text
 {
 	color: #a52a2a;
-	padding-bottom: 40px;
+	padding-bottom: 20px;
 	padding-left: 20px;
 	padding-right: 20px;
 	font-family: 'Montserrat', sans-serif;
@@ -307,32 +307,14 @@ header nav ul li a.active
 {
 	.banner-text
 	{
-		font-size: 23px;
+		font-size: 22px;
 	}
 }
 
 .banner-btn
 {
 	padding-bottom: 40px;
-}
-
-.banner-btn1
-{
-	font-weight: 400;
-	font-size: 27px;
-	text-align: center;
-	color: #d9534f;
-	border: solid 2px #d9534f;
-	border-radius: 50px;
-	padding: 5px 10px;
-	transition: 0.5s;
-	margin-right: 20px;
-	font-family: 'Montserrat', sans-serif;
-}
-
-.banner-btn
-{
-	padding-bottom: 40px;
+	padding-top: 20px;
 }
 
 @media(max-width: 350px)
@@ -341,14 +323,6 @@ header nav ul li a.active
 	{
 		padding-bottom: 20px;
 	}
-}
-
-.banner-btn1:hover
-{
-	text-decoration: none;
-	background-color: #d9534f;
-	transition: 0.5s;
-	color: white;
 }
 
 .banner-btn2
@@ -361,7 +335,6 @@ header nav ul li a.active
 	border-radius: 50px;
 	padding: 5px 10px;
 	transition: 0.5s;
-	margin-left: 20px;
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -373,57 +346,51 @@ header nav ul li a.active
 	color: white;
 }
 
-@media(max-width: 536px)
+@media(max-height: 736px)
 {
-	.banner-btn1
+	.banner-title
 	{
-		margin-right: 10px;
+		padding-top: 40px;
 	}
-
-	.banner-btn2
+	.banner-tagline
 	{
-		margin-left: 10px;
+		padding-bottom: 15px;
+	}
+	.banner-btn
+	{
+		padding-top: 15px;
 	}
 }
 
-@media(max-width: 470px)
+@media(max-height: 640px)
 {
-	.banner-btn1
+	.banner-title
 	{
-		margin-right: 5px;
-		font-size: 22px;
+		padding-top: 20px;
 	}
-
-	.banner-btn2
+	.banner-tagline
 	{
-		margin-left: 5px;
-		font-size: 22px;
+		padding-bottom: 15px;
 	}
 }
 
-@media(max-width: 379px)
+@media(max-height: 568px)
 {
-	.banner-btn1
+	.banner-title
 	{
-		margin: 0 0 0 0;
-	}
-
-	.banner-btn2
-	{
-		margin: 0 0 0 0;
+		padding-top: 15px;
 	}
 }
 
 @media(max-width: 347px)
 {
-	.banner-btn1
+	.calling-button
 	{
-		font-size: 19px;
+		font-size: 15px !important;
 	}
-
 	.banner-btn2
 	{
-		font-size: 19px;
+		font-size: 25px;
 	}
 }
 
