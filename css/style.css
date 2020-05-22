@@ -379,6 +379,11 @@ header nav ul li a.active
 	.banner-title
 	{
 		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	.banner-tagline
+	{
+		padding-bottom: 5px;
 	}
 }
 
