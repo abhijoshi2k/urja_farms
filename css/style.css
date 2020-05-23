@@ -782,7 +782,7 @@ footer
 	{
 		width: 220px;
 	}
-	.product-image
+	.product-image, .food-image
 	{
 		height: 165px;
 		width: 100%;
@@ -800,7 +800,7 @@ footer
 	{
 		width: 205px;
 	}
-	.product-image
+	.product-image, .food-image
 	{
 		height: 154px;
 		width: 100%;
@@ -818,7 +818,7 @@ footer
 	{
 		width: 188px;
 	}
-	.product-image
+	.product-image, .food-image
 	{
 		height: 141px;
 		width: 100%;
@@ -836,7 +836,7 @@ footer
 	{
 		width: 170px;
 	}
-	.product-image
+	.product-image, .food-image
 	{
 		height: 128px;
 		width: 100%;
@@ -863,7 +863,7 @@ footer
 	{
 		width: 152px;
 	}
-	.product-image
+	.product-image, .food-image
 	{
 		height: 114px;
 		width: 100%;
