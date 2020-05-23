@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-	<title>Urja Farm Eats</title>
+	<title>Urja Farm Eats | Our Products</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8" />
-	<meta name="description" content="Official website of Urja Farm Eats.">
-	<meta name="keywords" content="urja, farm, eats">
+	<meta name="description" content="Have a look at our products and get fresh fruits and vegetables delivered to your door-step.">
+    <meta name="keywords" content="urja, farm, eats, grocery, delivery, mumbai, food, home, free, sell, vegetables, fruits, online">
 	<meta name="author" content="Abhishek Joshi for 360 Digital Solutions">
 
 
@@ -99,62 +99,108 @@
 	<br>
 	<br>
 	<br>
+<script type="text/javascript">
+    
+    function suggest() {
+        var val = document.getElementById('search-box').value;
+        val = val.toLowerCase();
+        if(val=="")
+        {
+            $('.product').css('display','flex');
+            document.getElementById('search-btn').innerHTML = '<i class="fas fa-search">';
+        }
+        else
+        {
+            $('.product').css('display','none');
+            document.getElementById('search-btn').innerHTML = '<i class="fas fa-times"></i>';
+            len = val.length;
+            var i;
+            for (i=0;i<veg.length;i++)
+            {
+                if (len<=veg[i].length || len<=hindi[i].length || len<=marathi[i].length)
+                {
+                    if (val==veg[i].substring(0,len) || val==hindi[i].substring(0,len) || val==marathi[i].substring(0,len))
+                    {
+                        $('#'+veg[i]).css('display','flex');
+                    }
+                }
+            }
+        }
+    }
+
+    function clearsearch()
+    {
+        document.getElementById('search-box').value="";
+        suggest();
+    }
+</script>
+
 
 <h2 class="text-center topic-products">Our Products</h2>
 
+<div class="text-center call-button">
+    <a class="btn btn-sm btn-danger text-white calling-button" href="tel:+919137600428">Click to Call Us Now at +91 9137600428</a>
+</div>
+
 <br>
+
+<div class="product-search text-center">
+    <div class="product-search-bar">
+        <input type="text" placeholder="Search for product" class="product-search-input" onkeyup="suggest()" id="search-box">
+        <button type="button" onclick="clearsearch()" class="product-search-icon" id="search-btn"><i class="fas fa-search"></i></button>
+    </div>
+</div>
 
 
 <div class="container product-container">
-	<!--
-	<input type="text" class="product-search">
-	<button>Search</button>
+	
+        
 	<br>
--->	
+
     <div class="row">
-        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product" id="onion" hindi="pyaaz" marathi="kanda">
             <div class="card product-card">
                 <div class="card-img-top product-image">
                 	<img src="images/onion.jpg" class="food-image">
                 </div>
                 <div class="card-body product-card-body">
                     <div class="row">
-                        <h5 class="col-12 product-name">Onion</h5>
+                        <h5 class="col-12 product-name">Onion<br>(Kanda)</h5>
                     </div>
                     <div class="in-stock">₹20 per kg</div> 
                 </div>
             </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product" id="potato" hindi="aloo" marathi="batata">
             <div class="card product-card">
                 <div class="card-img-top product-image">
                 	<img src="images/potato.jpg" class="food-image">
                 </div>
                 <div class="card-body product-card-body">
                     <div class="row">
-                        <h5 class="col-12 product-name">Potato</h5>
+                        <h5 class="col-12 product-name">Potato<br>(Aloo)</h5>
                     </div>
                     <div class="in-stock">₹30 per kg</div> 
                 </div>
             </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product" id="cauliflower" hindi="flower" marathi="">
             <div class="card product-card">
                 <div class="card-img-top product-image">
                 	<img src="images/cauliflower.jpg" class="food-image">
                 </div>
                 <div class="card-body product-card-body">
                     <div class="row">
-                        <h5 class="col-12 product-name">Flower</h5>
+                        <h5 class="col-12 product-name">Caulilower<br>(Flower)</h5>
                     </div>
                     <div class="in-stock">₹50 per kg</div> 
                 </div>
             </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product" id="dudhi" hindi="lauki" marathi="">
             <div class="card product-card">
                 <div class="card-img-top product-image">
                 	<img src="images/gourd.jpg" class="food-image">
@@ -168,21 +214,21 @@
             </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product" id="sweetpotato" hindi="shakarkand" marathi="ratala">
             <div class="card product-card">
                 <div class="card-img-top product-image">
                 	<img src="images/sweetpotato.jpg" class="food-image">
                 </div>
                 <div class="card-body product-card-body">
                     <div class="row">
-                        <h5 class="col-12 product-name">Sweet Potato</h5>
+                        <h5 class="col-12 product-name">Sweet Potato<br>(Shakarkand)</h5>
                     </div>
                     <div class="in-stock">₹20 per kg</div> 
                 </div>
             </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product" id="tomato" hindi="tamatar" marathi="">
             <div class="card product-card">
                 <div class="card-img-top product-image">
                 	<img src="images/tomato.jpg" class="food-image">
@@ -196,28 +242,28 @@
             </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product" id="ladyfinger" hindi="bhindi" marathi="bhendi">
             <div class="card product-card">
                 <div class="card-img-top product-image">
                 	<img src="images/ladyfinger.jpg" class="food-image">
                 </div>
                 <div class="card-body product-card-body">
                     <div class="row">
-                        <h5 class="col-12 product-name">Bhendi</h5>
+                        <h5 class="col-12 product-name">Ladyfinger<br>(Bhendi)</h5>
                     </div>
                     <div class="in-stock">₹50 per kg</div> 
                 </div>
             </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product" id="frenchbeans" hindi="gavar" marathi="">
             <div class="card product-card">
                 <div class="card-img-top product-image">
                 	<img src="images/gavar.jpg" class="food-image">
                 </div>
                 <div class="card-body product-card-body">
                     <div class="row">
-                        <h5 class="col-12 product-name">Gavar</h5>
+                        <h5 class="col-12 product-name">Frenchbeans<br>(Gavar)</h5>
                     </div>
                     <div class="in-stock">₹45 per kg</div> 
                 </div>
@@ -227,203 +273,203 @@
 
 
     
-        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product" id="brinjal" hindi="baingan" marathi="wanga">
             <div class="card product-card">
                 <div class="card-img-top product-image">
                 	<img src="images/brinjal.jpg" class="food-image">
                 </div>
                 <div class="card-body product-card-body">
                     <div class="row">
-                        <h5 class="col-12 product-name">Brinjal</h5>
+                        <h5 class="col-12 product-name">Brinjal<br>(Baingan)</h5>
                     </div>
                     <div class="in-stock">₹50 per kg</div> 
                 </div>
             </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product" id="capsicum" hindi="simlamirchi" marathi="shimlamirchi">
             <div class="card product-card">
                 <div class="card-img-top product-image">
                 	<img src="images/capsicum.jpg" class="food-image">
                 </div>
                 <div class="card-body product-card-body">
                     <div class="row">
-                        <h5 class="col-12 product-name">Simla Mirch</h5>
+                        <h5 class="col-12 product-name">Capsicum<br>(Simla Mirch)</h5>
                     </div>
                     <div class="in-stock">₹50 per kg</div> 
                 </div>
             </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product" id="bittergourd" hindi="karela" marathi="karla">
             <div class="card product-card">
                 <div class="card-img-top product-image">
                 	<img src="images/bittergourd.jpg" class="food-image">
                 </div>
                 <div class="card-body product-card-body">
                     <div class="row">
-                        <h5 class="col-12 product-name">Karela</h5>
+                        <h5 class="col-12 product-name">Bittergourd<br>(Karela)</h5>
                     </div>
                     <div class="in-stock">₹60 per kg</div> 
                 </div>
             </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product" id="cucumber" hindi="kakdi" marathi="">
             <div class="card product-card">
                 <div class="card-img-top product-image">
                 	<img src="images/cucumber.jpg" class="food-image">
                 </div>
                 <div class="card-body product-card-body">
                     <div class="row">
-                        <h5 class="col-12 product-name">Cucumber</h5>
+                        <h5 class="col-12 product-name">Cucumber<br>(Kakdi)</h5>
                     </div>
                     <div class="in-stock">₹30 per kg</div> 
                 </div>
             </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product" id="carrot" hindi="gajar" marathi="">
             <div class="card product-card">
                 <div class="card-img-top product-image">
                 	<img src="images/carrots.jpg" class="food-image">
                 </div>
                 <div class="card-body product-card-body">
                     <div class="row">
-                        <h5 class="col-12 product-name">Carrot</h5>
+                        <h5 class="col-12 product-name">Carrot<br>(Gajar)</h5>
                     </div>
                     <div class="in-stock">₹30 per kg</div> 
                 </div>
             </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product" id="cabbage" hindi="gobi" marathi="kobi">
             <div class="card product-card">
                 <div class="card-img-top product-image">
                 	<img src="images/cabbage.jpg" class="food-image">
                 </div>
                 <div class="card-body product-card-body">
                     <div class="row">
-                        <h5 class="col-12 product-name">Cabbage</h5>
+                        <h5 class="col-12 product-name">Cabbage<br>(Gobi)</h5>
                     </div>
                     <div class="in-stock">₹18 per kg</div> 
                 </div>
             </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product" id="ginger" hindi="adrak" marathi="ala">
             <div class="card product-card">
                 <div class="card-img-top product-image">
                 	<img src="images/ginger.jpg" class="food-image">
                 </div>
                 <div class="card-body product-card-body">
                     <div class="row">
-                        <h5 class="col-12 product-name">Adrak</h5>
+                        <h5 class="col-12 product-name">Ginger<br>(Adrak)</h5>
                     </div>
                     <div class="in-stock">₹75 per kg</div> 
                 </div>
             </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product" id="peas" hindi="vatana" marathi="watana">
             <div class="card product-card">
                 <div class="card-img-top product-image">
                 	<img src="images/greenvatana.jpg" class="food-image">
                 </div>
                 <div class="card-body product-card-body">
                     <div class="row">
-                        <h5 class="col-12 product-name">Vatana</h5>
+                        <h5 class="col-12 product-name">Peas<br>(Vatana)</h5>
                     </div>
                     <div class="in-stock">₹75 per kg</div> 
                 </div>
             </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product" id="chili" hindi="mirch" marathi="mirchi">
             <div class="card product-card">
                 <div class="card-img-top product-image">
                 	<img src="images/greenchilli.jpg" class="food-image">
                 </div>
                 <div class="card-body product-card-body">
                     <div class="row">
-                        <h5 class="col-12 product-name">Mirch</h5>
+                        <h5 class="col-12 product-name">Chili<br>(Mirch)</h5>
                     </div>
                     <div class="in-stock">₹70 per kg</div> 
                 </div>
             </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product" id="chilispicy" hindi="mirchtikha" marathi="mirchitikhat">
             <div class="card product-card">
                 <div class="card-img-top product-image">
                 	<img src="images/redchilli.jpg" class="food-image">
                 </div>
                 <div class="card-body product-card-body">
                     <div class="row">
-                        <h5 class="col-12 product-name">Mirch Tikha</h5>
+                        <h5 class="col-12 product-name">Spicy Chili<br>(Mirch Tikha)</h5>
                     </div>
                     <div class="in-stock">₹70 per kg</div> 
                 </div>
             </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product" id="garlic" hindi="lasun" marathi="">
             <div class="card product-card">
                 <div class="card-img-top product-image">
                 	<img src="images/garlic.jpg" class="food-image">
                 </div>
                 <div class="card-body product-card-body">
                     <div class="row">
-                        <h5 class="col-12 product-name">Lasun</h5>
+                        <h5 class="col-12 product-name">Garlic<br>(Lasun)</h5>
                     </div>
                     <div class="in-stock">₹160 per kg</div> 
                 </div>
             </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product" id="spinach" hindi="palak" marathi="">
             <div class="card product-card">
                 <div class="card-img-top product-image">
                 	<img src="images/spinach.jpg" class="food-image">
                 </div>
                 <div class="card-body product-card-body">
                     <div class="row">
-                        <h5 class="col-12 product-name">Palak</h5>
+                        <h5 class="col-12 product-name">Spinach<br>(Palak)</h5>
                     </div>
                     <div class="in-stock">₹20 per group</div> 
                 </div>
             </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product" id="fenugreek" hindi="methi" marathi="">
             <div class="card product-card">
                 <div class="card-img-top product-image">
                 	<img src="images/methy.jpg" class="food-image">
                 </div>
                 <div class="card-body product-card-body">
                     <div class="row">
-                        <h5 class="col-12 product-name">Methi</h5>
+                        <h5 class="col-12 product-name">Fenugreek<br>(Methi)</h5>
                     </div>
                     <div class="in-stock">₹20 per group</div> 
                 </div>
             </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product" id="radish" hindi="muli" marathi="mula">
             <div class="card product-card">
                 <div class="card-img-top product-image">
                 	<img src="images/radish.jpg" class="food-image">
                 </div>
                 <div class="card-body product-card-body">
                     <div class="row">
-                        <h5 class="col-12 product-name">Mula</h5>
+                        <h5 class="col-12 product-name">Radish<br>(Mula)</h5>
                     </div>
                     <div class="in-stock">₹20 per kg</div> 
                 </div>
             </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product" id="springonion" hindi="pyaazpatth" marathi="pattapyaaz">
             <div class="card product-card">
                 <div class="card-img-top product-image">
                 	<img src="images/springonion.jpg" class="food-image">
@@ -437,42 +483,42 @@
             </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product" id="mintleaves" hindi="pudina" marathi="">
             <div class="card product-card">
                 <div class="card-img-top product-image">
                 	<img src="images/mintleaves.jpg" class="food-image">
                 </div>
                 <div class="card-body product-card-body">
                     <div class="row">
-                        <h5 class="col-12 product-name">Pudina</h5>
+                        <h5 class="col-12 product-name">Mint Leaves<br>(Pudina)</h5>
                     </div>
                     <div class="in-stock">₹10 per group</div> 
                 </div>
             </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product" id="lemon" hindi="nimbu" marathi="limbu">
             <div class="card product-card">
                 <div class="card-img-top product-image">
                 	<img src="images/lemon.jpg" class="food-image">
                 </div>
                 <div class="card-body product-card-body">
                     <div class="row">
-                        <h5 class="col-12 product-name">Lemon</h5>
+                        <h5 class="col-12 product-name">Lemon<br>(Nimbu)</h5>
                     </div>
                     <div class="in-stock">₹20/6 piece</div> 
                 </div>
             </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6 product" id="corriander" hindi="dhaniya" marathi="kothimbir">
             <div class="card product-card">
                 <div class="card-img-top product-image">
                 	<img src="images/dhaniya.jpg" class="food-image">
                 </div>
                 <div class="card-body product-card-body">
                     <div class="row">
-                        <h5 class="col-12 product-name">Dhaniya</h5>
+                        <h5 class="col-12 product-name">Corriander<br>(Dhaniya)</h5>
                     </div>
                     <div class="in-stock">₹10 per group</div> 
                 </div>
@@ -526,6 +572,7 @@
 					<p>
 						<a href="#" class="button btn insta footer-social1"><i class="fab fa-instagram"></i> instagram</a>
 						<a href="#" class="button btn fb footer-social2"><i class="fab fa-facebook-f"></i> facebook</a>
+                        <a href="https://wa.me/7507309867" class="button btn btn-success whatsapp footer-social3"><i class="fab fa-whatsapp"></i> WhatsApp</a>
 					</p>
 				</div>
 				<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 footer-blocks">
@@ -550,7 +597,21 @@
 </footer>
 
 
+<script type="text/javascript">
+    var i;
+    var items=document.querySelectorAll(".product");
+    var n=items.length;
+    var veg = [];
+    var marathi = [];
+    var hindi = [];
+    for(i=0;i<n;i++)
+    {
+        veg[i]=items[i].id;
+        marathi[i]=document.getElementById(veg[i]).getAttribute("marathi");
+        hindi[i]=document.getElementById(veg[i]).getAttribute("hindi");
+    }
 
+</script>
 
 </body>
 </html>

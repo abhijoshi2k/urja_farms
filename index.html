@@ -5,8 +5,8 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8" />
-	<meta name="description" content="Official website of Urja Farm Eats.">
-	<meta name="keywords" content="urja, farm, eats">
+	<meta name="description" content="Get fresh fruits and vegetables delivered to your door-step.">
+	<meta name="keywords" content="urja, farm, eats, grocery, delivery, mumbai, food, home, free, sell, vegetables, fruits, online">
 	<meta name="author" content="Abhishek Joshi for 360 Digital Solutions">
 
 
@@ -43,38 +43,6 @@
     <link rel="apple-touch-icon" href="images/logo.jpg">
 
 	
-	<script>
-		function numcount(){
-			const counters = document.querySelectorAll('.counter');
-			const speed = 26;
-
-			counters.forEach(counter =>{
-				const updateCount = () =>{
-					const target = +counter.getAttribute('data-target');
-					var count = +counter.innerText;
-
-					const inc = Math.floor(target/speed);
-
-
-					if(count<target)
-					{
-						counter.innerText = count + inc;
-						setTimeout(updateCount, 50);
-					}
-					else
-					{
-						counter.innerText = target;
-					}
-
-				}
-
-				updateCount();
-			});
-		}
-
-
-
-	</script>
 
 
 
@@ -131,7 +99,7 @@
 		<br>
 		<h1 class="text-center banner-title">Urja <span class="farm-dark">Farm</span> Eats</h1>
 		<h3 class="banner-tagline text-center"><i>...Feel the Freshness</i></h3>
-		<h4 class="text-center banner-text">We sell over <b><span class="counter" data-target="26">0</span></b> different fruits and vegetables!</h4>
+		<h4 class="text-center banner-text">We sell over wide range of different fruits and vegetables!</h4>
 		<div class="text-center call-button">
 			<a class="btn btn-danger text-white calling-button" href="tel:+919137600428">Click to Call Us Now at +91 9137600428</a>
 		</div>
@@ -145,16 +113,6 @@
 
 
 	<script type="text/javascript">
-		document.onreadystatechange = function(){
-			if(document.readyState =="complete")
-			{
-				numcount();
-			}
-		};
-
-		setTimeout(function(){
-			numcount();
-		},2500);
 
 		window.onscroll = function() {
 			if(document.body.scrollTop > 250 || document.documentElement.scrollTop > 250)
@@ -172,7 +130,7 @@
 
 <div class="container">
 	<h2 class="text-center topic">Why to Choose Us?</h2>
-	<p class="why-us">Your safety is our primary concern. Our team is committed to ensure that you get fresh and healthy groceries at your door-step. We also assure fair trade with farmers. Additionally, we ensure hygenic packing, 100% food safety and best in class food quality. We <b>don't</b> use any chemicals and directly provide the groceries from the farm. Our rates too, are lower than the market rates.
+	<p class="why-us">Your safety is our primary concern. Our team is committed to ensure that you get fresh and healthy groceries at your door-step. We also assure fair trade with farmers. Additionally, we ensure hygienic packing, 100% food safety and best in class food quality. We <b>don't</b> use any chemicals and directly provide the groceries from the farm. Our rates too, are lower than the market rates.
 	</p>
 	<p class="covid text-center text-danger">
 		We <b>strictly</b> follow the below specified rules while working.
@@ -268,6 +226,7 @@
 					<p>
 						<a href="#" class="button btn insta footer-social1"><i class="fab fa-instagram"></i> instagram</a>
 						<a href="#" class="button btn fb footer-social2"><i class="fab fa-facebook-f"></i> facebook</a>
+						<a href="https://wa.me/7507309867" class="button btn btn-success whatsapp footer-social3"><i class="fab fa-whatsapp"></i> WhatsApp</a>
 					</p>
 				</div>
 				<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 footer-blocks">
