@@ -759,6 +759,11 @@ footer
 	border-top-right-radius: 5px;
 }
 
+.product-card-body
+{
+	padding: 10px 15px 15px !important;
+}
+
 .product-name
 {
 	font-family: sans-serif;
