@@ -734,12 +734,13 @@ footer
     transition: 0.3s;
     width: 200px;
     cursor: pointer;
+    box-shadow: 2px 1px 1px rgba(0,0,0,0.4);
 }
 
 .product-card:hover
 {
     box-shadow: 2px 1px 7px rgba(0,0,0,0.8);
-    transform: scale(1.01);
+    transform: scale(1.02);
 }
 
 .product-image
@@ -764,12 +765,6 @@ footer
 	color: #dc3545;
 }
 
-.product-price
-{
-	text-align: right;
-	color: #000;
-}
-
 .in-stock
 {
 	width: 100%;
@@ -778,23 +773,86 @@ footer
 	border: 2px solid;
 	border-radius: 5px;
 	border-color: #4caf50;
-	color: #21910d;
+	color: #117106;
 }
 
-.out-stock
+@media(max-width: 575px)
 {
-	width: 100%;
-	padding: 6px 2px;
-	text-align: center;
-	border: 2px solid;
-	border-radius: 5px;
-	border-color: #f44336;
-	color: #f44336;
+	.product-card
+	{
+		width: 220px;
+	}
+	.product-image
+	{
+		height: 165px;
+		width: 100%;
+	}
 }
 
+@media(max-width: 499px)
+{
+	.product
+	{
+		padding-right: 10px !important;
+		padding-left: 10px !important;
+	}
+	.product-card
+	{
+		width: 205px;
+	}
+	.product-image
+	{
+		height: 154px;
+		width: 100%;
+	}
+}
 
+@media(max-width: 449px)
+{
+	.product
+	{
+		padding-right: 6px !important;
+		padding-left: 6px !important;
+	}
+	.product-card
+	{
+		width: 188px;
+	}
+	.product-image
+	{
+		height: 141px;
+		width: 100%;
+	}
+}
 
-@media(max-width: 320px)
+@media(max-width: 399px)
+{
+	.product
+	{
+		padding-right: 5px !important;
+		padding-left: 5px !important;
+	}
+	.product-card
+	{
+		width: 170px;
+	}
+	.product-image
+	{
+		height: 128px;
+		width: 100%;
+	}
+	.product-name
+	{
+		font-size: 18px;
+		padding: 0 15px !important;
+	}
+	.in-stock
+	{
+		padding: 2px;
+	}
+}
+
+@media(max-width: 359px)
 {
 	.product
 	{
@@ -812,35 +870,11 @@ footer
 	}
 	.product-name
 	{
-		font-size: 15px;
-		padding: 0 5px !important;
+		font-size: 17px;
+		padding: 0 15px !important;
 	}
-	 .product-price
-	 {
-	 	font-size: 15px;
-	 	padding: 0 5px 0 0 !important;
-	 }
-}
-
-@media(max-width: 575px)
-{
-	.product-card
+	.in-stock
 	{
-		width: 220px;
+		padding: 0px;
 	}
-	.product-image
-	{
-		height: 165px;
-		width: 100%;
-	}
-	.product-name
-	{
-		font-size: 15px;
-		padding: 0 5px !important;
-	}
-	 .product-price
-	 {
-	 	font-size: 15px;
-	 	padding: 0 5px 0 0 !important;
-	 }
 }

@@ -46,7 +46,7 @@
 	<script>
 		function numcount(){
 			const counters = document.querySelectorAll('.counter');
-			const speed = 99;
+			const speed = 26;
 
 			counters.forEach(counter =>{
 				const updateCount = () =>{
@@ -59,7 +59,7 @@
 					if(count<target)
 					{
 						counter.innerText = count + inc;
-						setTimeout(updateCount, 20);
+						setTimeout(updateCount, 50);
 					}
 					else
 					{
@@ -131,7 +131,7 @@
 		<br>
 		<h1 class="text-center banner-title">Urja <span class="farm-dark">Farm</span> Eats</h1>
 		<h3 class="banner-tagline text-center"><i>...Feel the Freshness</i></h3>
-		<h4 class="text-center banner-text">We sell over <b><span class="counter" data-target="99">0</span></b> different fruits and vegetables!</h4>
+		<h4 class="text-center banner-text">We sell over <b><span class="counter" data-target="26">0</span></b> different fruits and vegetables!</h4>
 		<div class="text-center call-button">
 			<a class="btn btn-danger text-white calling-button" href="tel:+919137600428">Click to Call Us Now at +91 9137600428</a>
 		</div>
@@ -278,7 +278,7 @@
 						By subscribing to our mailing list you will always get latest offers and updates from us.
 						<br>
 						<form class="text-center footer-form">
-							<input type="email" name="" class="footer-input" placeholder="Type your email" required><button type="submit" class="btn footer-button"><i class="far fa-paper-plane"></i></button>
+							<input type="text" name="" class="footer-input" placeholder="Type your email or number" required><button type="submit" class="btn footer-button"><i class="far fa-paper-plane"></i></button>
 						</form>
 					</p>
 					<p class="credits">
