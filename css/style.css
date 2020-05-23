@@ -102,6 +102,14 @@ header nav ul li a:hover
 	transition: 0.2s;
 }
 
+@media(max-width: 1000px)
+{
+	header nav ul li a:hover
+	{
+		transition: 0s;
+	}
+}
+
 header nav ul li a.active
 {
 	color: #fff;
