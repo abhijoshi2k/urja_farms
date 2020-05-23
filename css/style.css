@@ -1030,3 +1030,24 @@ footer
 	border-radius: 5px;
 	border-color: #5545b3;
 }
+
+.nihar
+{
+	color: rgba(255,255,255,0.2);
+	transition: 0.3s;
+	font-size: 10px;
+}
+
+.credits:hover .nihar
+{
+	color: rgba(255,255,255,0.75);
+	transition: 0.3s;
+	font-size: 10px;
+}
+
+.nihar:hover
+{
+	color: rgba(255,255,255,0.75);
+	transition: 0.3s;
+	font-size: 10px;
+}
