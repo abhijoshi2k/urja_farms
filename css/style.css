@@ -992,6 +992,11 @@ footer
 	margin-top: 5px;
 }
 
+.contact-set
+{
+	padding-bottom: 20px !important;
+}
+
 .product-search
 {
 	display: flex;
