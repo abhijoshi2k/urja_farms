@@ -494,6 +494,13 @@ footer
     color: rgba(255,255,255,0.75) !important;
 }
 
+.footer-button:focus
+{
+	outline: none;
+	border: 1px solid transparent;
+	box-shadow: none !important;
+}
+
 .footer-form
 {
 	width: 100%;
