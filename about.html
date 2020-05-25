@@ -9,6 +9,19 @@
 	<meta name="keywords" content="urja, farm, eats, grocery, delivery, mumbai, food, home, free, sell, vegetables, fruits, online">
 	<meta name="author" content="Abhishek Joshi for 360 Digital Solutions">
 
+
+
+
+
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self';
+    script-src 'self' https://code.jquery.com/ https://cdn.jsdelivr.net/ https://stackpath.bootstrapcdn.com/ https://use.fontawesome.com/ 'sha256-Gt8g3F2kAw6C7vRclPtOX34S4q+i6pOrq9YakHYvxMY=';
+    style-src-elem 'self' https://fonts.googleapis.com/ https://stackpath.bootstrapcdn.com/ https://use.fontawesome.com/;
+    style-src 'self' https://fonts.googleapis.com/ https://stackpath.bootstrapcdn.com/ https://use.fontawesome.com/;
+    font-src 'self' https://fonts.googleapis.com/ https://fonts.gstatic.com/">
+
+
+
+
 	<!--whatsapp and fb-->
 	<meta property="og:title" content="Urja Farm Eats | About Us" />
 	<meta property="og:description" content="Know about us and call us to get fresh fruits and vegetables delivered to your door-step." />
@@ -52,7 +65,8 @@
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
-	<script src="https://kit.fontawesome.com/48f5df0e7d.js" crossorigin="anonymous"></script>
+	<script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-add-css="false"></script>
+    <link href="https://use.fontawesome.com/releases/v5.13.0/css/svg-with-js.css" rel="stylesheet" />
 
 
 	<link rel="shortcut icon" href="images/favicon.png" type="image/png">
@@ -80,39 +94,19 @@
 		<nav id="nav">
 			<ul>
 				<li><a href="https://urjafarmeats.com/">HOME</a></li>
-				<li><a href="javascript: void(0)" class="active">ABOUT US</a></li>
+				<li><a href="javascript: void(0)" class="active tabclose">ABOUT US</a></li>
 				<li><a href="products.html">OUR PRODUCTS</a></li>
 				<li><a href="contact.html">CONTACT US</a></li>
 			</ul>
 		</nav>
-		<div class="menu-toggle" onclick="myFunction(this)" id="toggle">
+		<div class="menu-toggle" id="toggle">
 			<div class="bar1"></div>
 			<div class="bar2"></div>
 			<div class="bar3"></div>
 		</div>
 
 	</header>
-	<script type="text/javascript">
-		function myFunction(x) {
-			x.classList.toggle("change");
-		}
-	</script>
-	<script type="text/javascript">
-		$(document).ready(function(){
-			$('.menu-toggle').click(function(){
-				$('nav').toggleClass('active');
-				$('#layer').toggleClass('layer0');
-			})
-		})
 
-		$(document).ready(function(){
-			$('#layer').click(function(){
-				$('nav').toggleClass('active');
-				$('#layer').toggleClass('layer0');
-				$('#toggle').toggleClass('change');
-			})
-		})
-	</script>
 	<br>
 
 
@@ -328,9 +322,7 @@
 							<input type="text" name="entry.1873482848" class="footer-input" placeholder="Type your email or number" required><button type="submit" class="btn footer-button"><i class="far fa-paper-plane"></i></button>
 						</form>
 					</p>
-					<p class="credits">
-						Created by Abhishek Joshi (+919757468857)<br>for <a href="https://www.instagram.com/360digitalsol/" class="nihar">360 Digital Solutions <img class="digi-sol" src="images/digi_sol.jpg"></a>
-					</p>
+					<p class="c" id="c"></p>
 				</div>
 			</div>
 			<div class="copyright text-center"><i class="far fa-copyright"></i> 2020 Urja Farm Eats. All rights reserved.</div>
@@ -338,7 +330,41 @@
 	</div>	
 </footer>
 
+<script type="text/javascript">
+	document.getElementById('toggle').onclick = function(){
+        document.getElementById('toggle').classList.toggle("change");
+    };
 
+
+    $(document).ready(function(){
+		$('.menu-toggle').click(function(){
+			$('nav').toggleClass('active');
+			$('#layer').toggleClass('layer0');
+		})
+	})
+
+	$(document).ready(function(){
+		$('#layer').click(function(){
+			$('nav').toggleClass('active');
+			$('#layer').toggleClass('layer0');
+			$('#toggle').toggleClass('change');
+		})
+	})
+
+
+	document.getElementById('c').innerHTML = 'Created by Abhishek Joshi (+919757468857)<br>for <a href="https://www.instagram.com/360digitalsol/" class="nihar">360 Digital Solutions <img class="digi-sol" src="images/digi_sol.jpg"></a>';
+
+
+	$(document).ready(function(){
+		$('.tabclose').click(function(){
+			$('nav').toggleClass('active');
+			$('#layer').toggleClass('layer0');
+			$('#toggle').toggleClass('change');
+		})
+	})
+
+
+</script>
 
 
 </body>

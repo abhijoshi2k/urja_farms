@@ -555,7 +555,7 @@ footer
 	color: rgba(255,255,255,0.75);
 }
 
-.credits
+.c
 {
 	text-align: right;
 	color: rgba(255,255,255,0.2);
@@ -563,7 +563,7 @@ footer
 	font-size: 10px;
 }
 
-.credits:hover
+.c:hover
 {
 	color: rgba(255,255,255,0.75);
 	transition: 0.3s;
@@ -579,7 +579,7 @@ footer
 	transition: 0.3s;
 }
 
-.credits:hover .digi-sol
+.c:hover .digi-sol
 {
 	opacity: 0.75;
 	transition: 0.3s;
@@ -1043,7 +1043,7 @@ footer
 	font-size: 10px;
 }
 
-.credits:hover .nihar
+.c:hover .nihar
 {
 	color: rgba(255,255,255,0.75);
 	transition: 0.3s;
@@ -1055,4 +1055,12 @@ footer
 	color: rgba(255,255,255,0.75);
 	transition: 0.3s;
 	font-size: 10px;
+}
+
+.map-location
+{
+	width: 100%;
+	border: solid 1px;
+	border-radius: 5px;
+	border-color: rgba(0,0,0,0.3);
 }
